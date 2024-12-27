@@ -126,7 +126,7 @@ WiFiShell> exit
 **Project Structure**
 
 ```bash
-wifi-pen-testing-suite/
+pico_wlan_suite/
 ├── lib/
 │   ├── authbypass.mpy       # WEP cracking and weak PSK exploits
 │   ├── monitor.mpy          # Monitor mode utilities
@@ -138,6 +138,17 @@ wifi-pen-testing-suite/
 │   ├── trafficanalyzer.mpy  # Traffic analysis
 │   ├── phishingportal.mpy   # Phishing portal setup
 │   └── scan.mpy             # Network scanning
+├── lib/src/
+│   ├── authbypass.py       # Source code for WEP cracking
+│   ├── monitor.py          # Source code for monitor utilities
+│   ├── replayattack.py     # Source code for packet replay logic
+│   ├── dos.py              # Source code for beacon flooding
+│   ├── rogueap.py          # Source code for rogue AP creation
+│   ├── eapattack.py        # Source code for EAPOL replay attacks
+│   ├── wifimapper.py       # Source code for hidden SSID detection
+│   ├── trafficanalyzer.py  # Source code for traffic analysis
+│   ├── phishingportal.py   # Source code for phishing portal setup
+│   └── scan.py             # Source code for network scanning
 └── src/
     └── main.py             # Interactive CLI shell
 ```
